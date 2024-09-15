@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildkonverter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode"> <!-- Dark Mode als Standard -->
+    <div class="container">
+        <h1>Bild zu anderem Format konvertieren</h1>
+        <input type="file" id="uploadFile" accept="image/*" />
+        
+        <select id="formatSelect">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+            <option value="webp">WEBP</option>
+        </select>
+
+        <button id="convertButton">Konvertieren</button>
+
+        <canvas id="canvas" style="display: none;"></canvas>
+        <a id="downloadLink" style="display: none;">Download</a>
+    </div>
+
+    <footer>
+        <a href="mailto:mauro.cutrale.mail@gmail.com">Contact</a> |
+        <a href="https://github.com/mauromau" target="_blank">GitHub</a> |
+        <a href="https://kofi.com/mauromau" target="_blank">Ko-fi</a>
+    </footer>
+
+    <!-- Dark/Light Mode Switch -->
+    <div class="theme-switcher">
+        <button id="themeToggle">🌗 Switch Theme</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
